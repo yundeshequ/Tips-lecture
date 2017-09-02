@@ -11,9 +11,9 @@
 4. web标准:Web标准，不是一个标准,是一些列标准。Web标准由万维网联盟（W3C）制定。包括网站三层:结构层,表现层,动作层的标准,结构层标准主要是规定html,xhtml,xml的相关规范,表现层标准主要包括css的规范,动作层标准包含w3c dom模型,ECMAScript等规范.
 
 5. 阻止冒泡:	
-
+   
    		e.stopPropagation();ie9+;
-   		e.cancelBubble = true;ie6/7/8;
+         e.cancelBubble = true;ie6/7/8;
    
    事件对象:	
    
