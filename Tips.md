@@ -17,32 +17,32 @@
 		e.cancelBubble = true;ie6/7/8;
       ```
       
-      事件对象:
+6.     事件对象:
       
       ```
          window.event;ie6/7/8;
    		function(e){}中的e.ie9+;
       ```
       
-      阻止默认事件:
+7.      阻止默认事件:
       
       ```
 		e.preventDefault();ie9+;
    		returnValue = false;
       ```
       
-      获取滚动条位置:
+8.      获取滚动条位置:
       
       ```
    		window.pageYOffset;
    		document.documentElement.scrollTop;
       ```
 
-6. js执行流程流程中第一阶段会创建所有变量,并赋值为undefined,(hoisting(变量声明提升)机制)对象如果添加属性并赋值,也会遵循变量声明提升.
+9. js执行流程流程中第一阶段会创建所有变量,并赋值为undefined,(hoisting(变量声明提升)机制)对象如果添加属性并赋值,也会遵循变量声明提升.
 
-7. typeof 正则表达式;----返回object;
+10. typeof 正则表达式;----返回object;
 
-8. if语句里声明函数,在strict mode出现之前,在if内声明函数是没有一致性的,不同浏览器会做出不同解释,最佳的代码规范都要求不在if里声明函数.
+11. if语句里声明函数,在strict mode出现之前,在if内声明函数是没有一致性的,不同浏览器会做出不同解释,最佳的代码规范都要求不在if里声明函数.
 
 ---
 
