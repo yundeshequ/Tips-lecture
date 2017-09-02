@@ -13,17 +13,20 @@
 5. 阻止冒泡:	
 
    		e.stopPropagation();ie9+;
-   		e.cancelBubble = true;ie6/7/8;
-
+   		e.cancelBubble = true;ie6/7/8;
+   
    事件对象:	
+   
    		window.event;ie6/7/8;
    		function(e){}中的e.ie9+;
-
+   
    阻止默认事件:	
+   
    		e.preventDefault();ie9+;
    		returnValue = false;
-
+   
    获取滚动条位置:	
+   
    		window.pageYOffset;
    		document.documentElement.scrollTop;
 
