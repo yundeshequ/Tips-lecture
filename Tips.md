@@ -72,7 +72,7 @@
 
 12. jsonp: json with padding, 用json填充函数的实参. 其本质上是利用<script> 标签的src属性可以跨域的原理来实现跨域.
 
-13. 原型链: 一条由__proto__串起来,直到 Object()的prototype的__proto__为null的链, 称为原型链.
+13. 原型链: 一条由__proto__串起来,直到 Object().prototype.__proto__为null的链, 称为原型链.
 
 ---
 
