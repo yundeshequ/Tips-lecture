@@ -74,6 +74,16 @@
 
 13. 原型链: 一条由__proto__串起来,直到 Object().prototype.__proto__为null的链, 称为原型链.
 
+14. 由于Function的特殊性，它“自己构造自己”。
+
+    ```
+    Function.__proto__ === Function.prototype //true
+    ```
+
+    ​
+
+    ​
+
     ​
 
 ---
