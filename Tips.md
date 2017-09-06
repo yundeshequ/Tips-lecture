@@ -12,28 +12,28 @@
 
 5. 阻止冒泡:
 
-  ```
-  e.stopPropagation();ie9+;
+  ```javascript
+  e.stopPropagation();IE9+
   e.cancelBubble = true;ie6/7/8;
   ```
 
    事件对象:
 
-  ```
+  ```javascript
   window.event;ie6/7/8;
   function(e){}中的e.ie9+;
   ```
 
    阻止默认事件:
 
-  ```
+  ```javascript
   e.preventDefault();ie9+;
-  returnValue = false;
+  returnValue = false;IE6/7/8
   ```
 
    获取滚动条位置:
 
-  ```
+  ```javascript
   window.pageYOffset;IE9+
   document.documentElement.scrollTop;IE6/7/8
   ```
@@ -76,11 +76,43 @@
 
 14. 由于Function的特殊性，它“自己构造自己”。
 
-    ```
+    ```javascript
     Function.__proto__ === Function.prototype //true
     ```
 
-    ​
+15. 冻结的对象: 
+
+    ```javascript
+    const foo = Object.freeze({});
+    //常规模式给foo对象添加属性不起作用;
+    //严格模式给foo添加属性报错;
+    foo.prop = 111;//报错
+    ```
+
+    常量foo指向一个冻结的对象，所以添加新属性不起作用，严格模式时还会报错。
+
+    出了将对象本身冻结, 对象的属性也应该被冻结:
+
+    ```javascript
+    var oFree = (obj) {
+      Object.freeze(obj);
+      Object.keys(obj).forEach( (key, value) => {
+        if( typeof obj[key] === 'object' ) {
+          oFree(obj[key]);
+        }
+      });
+    };
+    ```
+
+16. let 声明的变量不属于全局变量:
+
+    ```javascript
+    var a = 1;
+    window.a // 1
+    //===============
+    let a = 1;
+    window.a //undefined
+    ```
 
     ​
 
