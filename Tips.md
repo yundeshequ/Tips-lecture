@@ -34,8 +34,8 @@
    获取滚动条位置:
 
   ```
-  window.pageYOffset;
-  document.documentElement.scrollTop;
+  window.pageYOffset;IE9+
+  document.documentElement.scrollTop;IE6/7/8
   ```
 
 6. js执行流程流程中第一阶段会创建所有变量,并赋值为undefined,(hoisting(变量声明提升)机制)对象如果添加属性并赋值,也会遵循变量声明提升.
@@ -73,6 +73,8 @@
 12. jsonp: json with padding, 用json填充函数的实参. 其本质上是利用<script> 标签的src属性可以跨域的原理来实现跨域.
 
 13. 原型链: 一条由__proto__串起来,直到 Object().prototype.__proto__为null的链, 称为原型链.
+
+    ​
 
 ---
 
