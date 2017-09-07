@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数组排序</title>
+    <script>
+        let reorder = (arr) => {
+            for (let i = 0; i < arr.length; i ++) {
+                for (let j = arr.length; j > i; j --) {
+                    if( arr[i] > arr[j] ) {
+                        let temp;
+                        temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
+                }
+            }
+            return arr;
+        }
+        let array1 = [1,4,6,8,3,5,8,5];
+        console.log(reorder(array1));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
