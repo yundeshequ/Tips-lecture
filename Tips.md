@@ -14,39 +14,36 @@
 
   ​
 
-  1. 阻止冒泡:
+  阻止冒泡:
 
-    ```javascript
-    e.stopPropagation();IE9+
-    e.cancelBubble = true;ie6/7/8;
-    ```
+  ```javascript
+  e.stopPropagation();IE9+
+  e.cancelBubble = true;ie6/7/8;
+  ```
+  事件对象:
 
-  2. 事件对象:
+  ```javascript
+  window.event;ie6/7/8;
+  function(e){}中的e.ie9+;
+  ```
+  阻止默认事件:
 
-    ```javascript
-    window.event;ie6/7/8;
-    function(e){}中的e.ie9+;
-    ```
+  ```javascript
+  e.preventDefault();ie9+;
+  returnValue = false;IE6/7/8
+  ```
+  获取滚动条位置:
 
-  3. 阻止默认事件:
+  ```javascript
+  window.pageYOffset;IE9+
+  document.documentElement.scrollTop;IE6/7/8
+  ```
 
-    ```javascript
-    e.preventDefault();ie9+;
-    returnValue = false;IE6/7/8
-    ```
+  同时阻止冒泡和默认事件:
 
-  4. 获取滚动条位置:
-
-    ```javascript
-    window.pageYOffset;IE9+
-    document.documentElement.scrollTop;IE6/7/8
-    ```
-
-    同时阻止冒泡和默认事件:
-
-    ```javascript
-    return false;//在事件处理函数末尾写return false.
-    ```
+  ```javascript
+  return false;//在事件处理函数末尾写return false.
+  ```
 
 6. js执行流程流程中第一阶段会创建所有变量,并赋值为undefined,(hoisting(变量声明提升)机制)对象如果添加属性并赋值,也会遵循变量声明提升.
 
