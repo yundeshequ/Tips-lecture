@@ -171,6 +171,46 @@
 
 23. 数组去重: 6种方法.
 
+24. angular中ng-repeat指令:
+
+    ```javascript
+    <ul>
+      <li ng-repeat="(index, value) in array">
+      	//index为下标.
+        //value为数组元素.
+      </li>
+    </ul>
+    ```
+
+    ​
+
+25. ng-model指令详解:
+
+    1. ```javascript
+       //对于input:text, ng-model绑定的值为元素的value.
+       <input type="text" ng-model="value">
+       //此处的"value"是domElement.value.
+       ```
+
+    2. ```javascript
+       //对于input:password, ng-model绑定的值为元素的value.
+       <input type="password" ng-model="value">
+       //此处的"value"是domElement.value.
+       ```
+
+    3. ```javascript
+       //对于textarea, ng-model绑定的值为元素的value.
+       <textarea ng-model="value"></textarea>
+       //此处的"value"是domElement.value.
+       ```
+
+    4. ```javascript
+       //对于input:checkbox/radio, ng-model绑定的值为元素的checked的值(true/false).
+       <input type="checkbox" ng-model="checked">
+       <input type="radio" ng-model="checked">
+       //此处的"checked"是domElement.checked.
+       ```
+
 ---
 
 以后会不定期更新.哈哈哈 .
