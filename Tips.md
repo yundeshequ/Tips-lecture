@@ -17,26 +17,26 @@
   阻止冒泡:
 
   ```javascript
-  e.stopPropagation();IE9+
-  e.cancelBubble = true;ie6/7/8;
+  e.stopPropagation();//IE9+
+  e.cancelBubble = true;//ie6/7/8;
   ```
   事件对象:
 
   ```javascript
-  window.event;ie6/7/8;
-  function(e){}中的e.ie9+;
+  window.event;//ie6/7/8;
+  function(e){}//其中的e.ie9+;
   ```
   阻止默认事件:
 
   ```javascript
-  e.preventDefault();ie9+;
-  returnValue = false;IE6/7/8
+  e.preventDefault();//ie9+;
+  returnValue = false;//IE6/7/8
   ```
   获取滚动条位置:
 
   ```javascript
-  window.pageYOffset;IE9+
-  document.documentElement.scrollTop;IE6/7/8
+  window.pageYOffset;//IE9+
+  document.documentElement.scrollTop;//IE6/7/8
   ```
 
   同时阻止冒泡和默认事件:
