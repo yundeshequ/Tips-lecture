@@ -205,6 +205,7 @@
        ```
 
     4. ```javascript
+       //*此条完整性有待完善.
        //对于input:checkbox/radio, ng-model绑定的值为元素的checked的值(true/false).
        <input type="checkbox" ng-model="checked">
        <input type="radio" ng-model="checked">
