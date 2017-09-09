@@ -169,7 +169,7 @@
     3. [冒泡排序](https://github.com/haolic/Tips-lecture/blob/master/example/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F.html)
     4. [选择排序](https://github.com/haolic/Tips-lecture/blob/master/example/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F.html)
 
-23. 数组去重: 6种方法.
+23. [数组去重: 6种方法.](https://github.com/haolic/Tips-lecture/tree/master/example/%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D)
 
 24. angular中ng-repeat指令:
 
