@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>通过对象的属性去重</title>
+	<script>
+		Array.prototype.reorder = function () {
+			let res = [];
+			let hash = {};
+			for (let i = 0, len = this.length; i < len; i ++) {
+				let key = typeof(this[i]) + this[i];
+				if(hash[key] != 1){
+					res.push(this[i]);
+					hash[key] = 1;
+				}
+			}
+			return res;
+		}
+		let array1 = [1,1,1,2,2,2,3,3,34,4,4,4,5,5,55,6];
+		console.log(array1.reorder());
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

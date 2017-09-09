@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>break</title>
+	<script>
+		let reorder = (arr) => {
+			let res = [];
+			let j = 0;
+			for (let i = 0; i <arr.length; i ++) {
+				for (j = 0; j < res.length; j ++) {
+					if (arr[i] === arr[j]) {
+						break;
+					}
+				}
+				if( j == res.length) {
+					res.push(arr[i]);
+				}
+			}
+			return res;
+		}
+		let array1 = [1,2,3,4,5,3,3,3,4,4,5,55,3,2,3];
+		console.log(reorder(array1));
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
