@@ -167,7 +167,7 @@
     1. [sort()方法](https://github.com/haolic/Tips-lecture/blob/master/example/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/sort()%E6%8E%92%E5%BA%8F.html)
     2. [二分法](https://github.com/haolic/Tips-lecture/blob/master/example/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/%E4%BA%8C%E5%88%86%E6%B3%95%E6%8E%92%E5%BA%8F.html)
     3. [选择排序](https://github.com/haolic/Tips-lecture/blob/master/example/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F.html)
-    4. [冒泡排序](https://github.com/haolic/Tips-lecture/blob/master/example/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F.html)
+    4. [冒泡排序](https://github.com/haolic/Tips-lecture/blob/master/example/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F.html)
 
 23. [数组去重: 6种方法.](https://github.com/haolic/Tips-lecture/tree/master/example/%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D)
 
