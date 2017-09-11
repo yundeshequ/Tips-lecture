@@ -214,16 +214,40 @@
 
 26. Vue2中v-model的.lazy修饰符, 是使得input的输入内容在失去焦点时响应数据变化.
 
-27. 继承的几种方式:
+27. DOM节点操作:
 
-28. DOM节点操作:
+    1. 创建节点:
 
-29. ajax中阻止缓存: 
+       ```javascript
+       document.createElement(nodeName);
+       ```
+
+    2. 在某个节点前插入节点:
+
+       ```javascript
+       document.insertBefore(newNode, oldNode);
+       ```
+
+    3. 复制(clone)节点:
+
+       ```javascript
+       cloneNode(true | false);
+       ```
+
+    4. 删除节点: 
+
+       ```javascript
+       parentNode.removeChild(node);
+       ```
+
+       ​
+
+28. ajax中阻止缓存: 
 
     1. jquery中cache: false
     2. 在URL参数后加上 "?timestamp=" + new Date().getTime();
 
-30. src和href的区别:
+29. src和href的区别: src是加载静态资源比如加载图片, 加载js, href是超链接的写法,一般用来给某标记或文字设置超链接.
 
 ---
 
