@@ -256,6 +256,21 @@
     1. GET是和请求头一起发送数据, 大小有限制, 但是速度快；
     2. POST是和请求体（正文）一起发送，大小没有限制。
 
+32. 判断object的具体类型: Object.prototype.toString.call(obj)判断obj的具体类型;
+
+    ​	由于typeof(array)/ typeof(null)/ typeof(obj)均返回object所以需要用上述方法判断具体类型.
+
+33. 有关web性能:
+
+    1. web性能时间: 从用户输入网址回车到整个网站(或部分)显示到用户面前所花的时间.
+       1. dns解析时间: 
+          1. 减少DNS解析时间:国内尽量用中国万网域名.
+       2. 网页下载时间: 
+          1. 减少冗余代码(纯手写), 
+          2. 减少http请求(css/js 合并&压缩, css sprites/webpack打包).
+       3. 浏览器渲染时间: 
+          1. css 高效能: 书写顺序(位置属性, 大小, 文本, 背景, 其他(animation, transition)))
+
 ---
 
 以后会不定期更新.哈哈哈 .
